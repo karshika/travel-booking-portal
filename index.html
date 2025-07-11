@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Booking Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Travel Booking Portal</h1>
+    <nav>
+      <ul>
+        <li><a href="#flights">Flights</a></li>
+        <li><a href="#hotels">Hotels</a></li>
+        <li><a href="#tours">Tours</a></li>
+        <li><a href="#payment">Payment</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="flights">
+    <h2>Book Flights</h2>
+    <form id="flight-form">
+      <input type="text" placeholder="From" required>
+      <input type="text" placeholder="To" required>
+      <input type="date" required>
+      <select required>
+        <option value="economy">Economy</option>
+        <option value="business">Business</option>
+        <option value="first">First Class</option>
+      </select>
+      <button type="submit">Search Flights</button>
+    </form>
+    <div id="flight-results"></div>
+  </section>
+
+  <section id="hotels">
+    <h2>Book Hotels</h2>
+    <form id="hotel-form">
+      <input type="text" placeholder="Location" required>
+      <input type="date" placeholder="Check-in" required>
+      <input type="date" placeholder="Check-out" required>
+      <select required>
+        <option value="1">1 Star</option>
+        <option value="2">2 Star</option>
+        <option value="3">3 Star</option>
+        <option value="4">4 Star</option>
+        <option value="5">5 Star</option>
+      </select>
+      <button type="submit">Search Hotels</button>
+    </form>
+    <div id="hotel-results"></div>
+  </section>
+
+  <section id="tours">
+    <h2>Explore Tours</h2>
+    <form id="tour-form">
+      <input type="text" placeholder="Destination" required>
+      <input type="date" required>
+      <select required>
+        <option value="adventure">Adventure</option>
+        <option value="romantic">Romantic</option>
+        <option value="family">Family</option>
+      </select>
+      <button type="submit">Search Tours</button>
+    </form>
+    <div id="tour-results"></div>
+  </section>
+
+  <section id="payment">
+    <h2>Payment</h2>
+    <form id="payment-form">
+      <input type="text" placeholder="Cardholder Name" required>
+      <input type="text" placeholder="Card Number" required>
+      <input type="text" placeholder="Expiry Date (MM/YY)" required>
+      <input type="text" placeholder="CVV" required>
+      <button type="submit">Pay Now</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Travel Booking Portal</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
